@@ -50,5 +50,6 @@ Average Time: 1.31s
     __tests__/components/AuthorCard-test.js
 
     Test Suites: 5 passed, 5 total
-    Tests:       5 passed, 5 total
+    Tests:       7 passed, 7 total
     Snapshots:   5 passed, 5 total
+    Time:        0.812s, estimated 1s
