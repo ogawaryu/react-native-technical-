@@ -8,8 +8,8 @@ import {
 } from 'react-native'
 
 type Props = {
-  imagePath: string,
   userName: string,
+  imagePath: string,
   alignLeft: boolean
 }
 
@@ -26,5 +26,11 @@ const AuthorCard = ({ userName, imagePath, alignLeft }: Props) => (
     </View>
   </View>
 )
+
+AuthorCard.defaultProps = {
+  userName: '',
+  imagePath: '',
+  alignLeft: false
+}
 
 export default AuthorCard
