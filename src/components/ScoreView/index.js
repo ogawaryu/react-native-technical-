@@ -25,4 +25,9 @@ const ScoreView = ({forkAmount, starAmount}: Props) => (
   </View>
 )
 
+ScoreView.defaultProps = {
+  forkAmount: 0,
+  starAmount: 0
+}
+
 export default ScoreView

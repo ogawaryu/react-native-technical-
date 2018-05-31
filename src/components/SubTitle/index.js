@@ -19,4 +19,9 @@ const SubTitle = ({opened, closed}: Props) => (
   </View>
 )
 
+SubTitle.defaultProps = {
+  opened: 0,
+  closed: 0
+}
+
 export default SubTitle
