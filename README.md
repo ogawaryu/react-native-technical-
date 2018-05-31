@@ -48,8 +48,6 @@ Run test:
 # npm test
 ```
 
-Average Time: 1.31s
-
     __tests__/components/SubTitle-test.js
     __tests__/components/ScoreView-test.js
     __tests__/components/RepositoryBox-test.js
