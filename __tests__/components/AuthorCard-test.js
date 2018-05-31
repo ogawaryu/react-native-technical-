@@ -2,8 +2,8 @@ import React from 'react'
 import AuthorCard from '../../src/components/AuthorCard'
 import renderer from 'react-test-renderer'
 
-let userName = 'UserName'
-let urlPath = 'http://i.pravatar.cc/300'
+const userName = 'UserName'
+const urlPath = 'http://i.pravatar.cc/300'
 
 const component = (
   <AuthorCard
@@ -21,13 +21,13 @@ describe('AuthorCard Component Test', () => {
     expect(tree.toJSON()).toMatchSnapshot()
   })
 
-  test('Should Render AuthorCard when Passing Props userName and imagePath Test', () => {
+  test('Should Render AuthorCard when Passing Props userName, imagePath and alignLeft Test', () => {
     expect(testInstance.findByType(AuthorCard).props.userName).toBe(userName)
     expect(testInstance.findByType(AuthorCard).props.imagePath).toBe(urlPath)
     expect(testInstance.findByType(AuthorCard).props.alignLeft).toBeTruthy()
   })
 
-  test('Should Render AuthorCard Default Props Value when No Passing Props Test', () => {
+  test('Should Render AuthorCard Default Props when Empty Props Test', () => {
     let testInstanceLocal = renderer.create((
       <AuthorCard />
     )).root
