@@ -25,4 +25,11 @@ const RepositoryBox = ({repositoryName, description, alignLeft, children}: Props
   </View>
 )
 
+RepositoryBox.defaultProps = {
+  repositoryName: '',
+  description: '',
+  alignLeft: false,
+  children: null
+}
+
 export default RepositoryBox
