@@ -36,4 +36,5 @@ describe('AuthorCard Component Test', () => {
     expect(testInstanceLocal.findByType(AuthorCard).props.imagePath).toBe('')
     expect(testInstanceLocal.findByType(AuthorCard).props.alignLeft).toBeFalsy()
   })
+
 })

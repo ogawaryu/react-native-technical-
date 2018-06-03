@@ -1,5 +1,5 @@
-import Home from './container/Home'
-import RepositoryInfo from './container/RepositoryInfo'
+import Home from './containers/Home'
+import RepositoryInfo from './containers/RepositoryInfo'
 
 import {
   createStackNavigator
